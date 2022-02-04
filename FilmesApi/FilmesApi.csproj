@@ -11,6 +11,8 @@
     <None Remove="Data\NovaPasta\**" />
     <None Remove="Data\Dtos\Gerente\" />
     <None Remove="Data\Dtos\Sessao\" />
+    <None Remove="Services\" />
+    <None Remove="FluentResults" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,12 +28,14 @@
     <PackageReference Include="MySql.EntityFrameworkCore" Version="5.0.3" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="FluentResults" Version="2.5.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Migrations\" />
     <Folder Include="Data\Dtos\Gerente\" />
     <Folder Include="Data\Dtos\Sessao\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>

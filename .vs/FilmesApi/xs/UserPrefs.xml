@@ -1,13 +1,21 @@
 ﻿<Properties StartupConfiguration="{C5BAD384-92D3-4EEF-A1CE-3603CBF45DDF}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FilmesApi/Controllers/CinemaController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FilmesApi/Startup.cs">
     <Files>
-      <File FileName="FilmesApi/Controllers/FilmeController.cs" Line="42" Column="30" />
-      <File FileName="FilmesApi/Controllers/CinemaController.cs" Line="49" Column="58" />
+      <File FileName="FilmesApi/Controllers/CinemaController.cs" Line="6" Column="1" />
+      <File FileName="FilmesApi/Services/CinemaServices.cs" Line="73" Column="15" />
+      <File FileName="FilmesApi/Controllers/FilmeController.cs" Line="2" Column="15" />
+      <File FileName="FilmesApi/Services/FilmeServices.cs" Line="1" Column="1" />
+      <File FileName="FilmesApi/Startup.cs" Line="6" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="FilmesApi" expanded="True" />
+          <Node name="FilmesApi" expanded="True">
+            <Node name="FilmesApi" expanded="True">
+              <Node name="Services" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DxiDzbFJfidoMBHj1PG/WgxA138+vhzidTRPhWMXZ1X9MPez9sO56/hujBrsAFCNtcbep2j265lbd/6MscTo0g==",
+  "dgSpecHash": "6GCFGlvzi8vO6+tPetJpki+MoirRIwYp75sRQzhrttng96Dq/rcyqhX7g66SmNeJc/IqYzb0C80maPYxcVkWXg==",
   "success": true,
   "projectFilePath": "/Users/muriloribeiro/Documents/Projetos/FilmeAPI/FilmesApi/FilmesApi.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "/Users/muriloribeiro/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/8.1.1/automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "/Users/muriloribeiro/.nuget/packages/bouncycastle.netcore/1.8.5/bouncycastle.netcore.1.8.5.nupkg.sha512",
     "/Users/muriloribeiro/.nuget/packages/castle.core/4.4.1/castle.core.4.4.1.nupkg.sha512",
+    "/Users/muriloribeiro/.nuget/packages/fluentresults/2.5.0/fluentresults.2.5.0.nupkg.sha512",
     "/Users/muriloribeiro/.nuget/packages/google.protobuf/3.14.0/google.protobuf.3.14.0.nupkg.sha512",
     "/Users/muriloribeiro/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/muriloribeiro/.nuget/packages/k4os.compression.lz4/1.1.11/k4os.compression.lz4.1.1.11.nupkg.sha512",

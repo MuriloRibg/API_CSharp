@@ -165,3 +165,4 @@
 /Users/muriloribeiro/Documents/Projetos/FilmeAPI/FilmesApi/obj/Debug/net5.0/ref/FilmesApi.dll
 /Users/muriloribeiro/Documents/Projetos/FilmeAPI/FilmesApi/obj/Debug/net5.0/FilmesApi.pdb
 /Users/muriloribeiro/Documents/Projetos/FilmeAPI/FilmesApi/obj/Debug/net5.0/FilmesApi.genruntimeconfig.cache
+/Users/muriloribeiro/Documents/Projetos/FilmeAPI/FilmesApi/bin/Debug/net5.0/FluentResults.dll
