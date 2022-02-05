@@ -29,6 +29,9 @@ namespace FilmesAPI
             //Fazendo a injeção dos Services dentro do controlador;
             services.AddScoped<FilmeServices, FilmeServices>();
             services.AddScoped<CinemaServices, CinemaServices>();
+            services.AddScoped<EnderecoService, EnderecoService>();
+            services.AddScoped<GerenteService, GerenteService>();
+            services.AddScoped<SessaoService, SessaoService>();
 
             services.AddControllers();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());

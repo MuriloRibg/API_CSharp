@@ -1,20 +1,14 @@
 ﻿<Properties StartupConfiguration="{C5BAD384-92D3-4EEF-A1CE-3603CBF45DDF}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="UsuariosApi/Startup.cs">
-    <Files>
-      <File FileName="UsuariosApi/Controllers/CadastroController.cs" Line="20" Column="19" />
-      <File FileName="UsuariosApi/Services/CadastroServices.cs" Line="17" Column="60" />
-      <File FileName="UsuariosApi/Properties/launchSettings.json" Line="20" Column="70" />
-      <File FileName="UsuariosApi/Startup.cs" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FilmesApi" expanded="True">
-            <Node name="UsuariosApi" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
+            <Node name="FilmesApi" expanded="True">
+              <Node name="Migrations" expanded="True">
+                <Node name="20220203154638_RelacionamentoCinemaFilme.cs" expanded="True" selected="True" />
+              </Node>
               <Node name="Services" expanded="True" />
-              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>

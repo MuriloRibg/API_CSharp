@@ -128,7 +128,7 @@ namespace FilmesApi.Migrations
 
                     b.HasIndex("FilmeId");
 
-                    b.ToTable("Sessaos");
+                    b.ToTable("Sessoes");
                 });
 
             modelBuilder.Entity("FilmesAPI.Models.Cinema", b =>

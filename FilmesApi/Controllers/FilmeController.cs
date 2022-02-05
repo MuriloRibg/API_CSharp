@@ -47,7 +47,7 @@ namespace FilmesAPI.Controllers
         public IActionResult AtualizaFilme(int id, [FromBody] UpdateFilmeDto filmeDto)
         {
             Result result = _filmeService.AtualizarFilme(id, filmeDto);
-            if (result.IsFailed) return NotFound();
+            if (result.IsFailed) return NotFound(result.Errors);
             return NoContent();
         }
 
@@ -55,7 +55,7 @@ namespace FilmesAPI.Controllers
         public IActionResult DeletaFilme(int id)
         {
             Result result = _filmeService.DeletaFilme(id);
-            if (result.IsFailed) return NotFound();           
+            if (result.IsFailed) return NotFound(result.Errors);           
             return NoContent();
         }
 

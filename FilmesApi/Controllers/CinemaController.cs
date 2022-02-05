@@ -45,7 +45,7 @@ namespace FilmesAPI.Controllers
         public IActionResult AtualizaCinema(int id, [FromBody] UpdateCinemaDto cinemaDto)
         {
             Result result = _cinemaServices.AtualizaCinema(id, cinemaDto);
-            if (result.IsFailed) return NotFound();
+            if (result.IsFailed) return NotFound(result.Errors);
             return NoContent();
         }
 
@@ -53,7 +53,7 @@ namespace FilmesAPI.Controllers
         public IActionResult DeletaCinema(int id)
         {
             Result result = _cinemaServices.DeletaCinema(id);
-            if (result.IsFailed) return NotFound();
+            if (result.IsFailed) return NotFound(result.Errors);
             return NoContent();
         }
 

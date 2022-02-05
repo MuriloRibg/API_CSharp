@@ -9,7 +9,7 @@ namespace FilmesApi.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Sessaos",
+                name: "Sessoes",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -20,15 +20,15 @@ namespace FilmesApi.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Sessaos", x => x.Id);
+                    table.PrimaryKey("PK_Sessoes", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Sessaos_Cinemas_CinemaId",
+                        name: "FK_Sessoes_Cinemas_CinemaId",
                         column: x => x.CinemaId,
                         principalTable: "Cinemas",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Sessaos_Filmes_FilmeId",
+                        name: "FK_Sessoes_Filmes_FilmeId",
                         column: x => x.FilmeId,
                         principalTable: "Filmes",
                         principalColumn: "Id",
@@ -36,20 +36,20 @@ namespace FilmesApi.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Sessaos_CinemaId",
-                table: "Sessaos",
+                name: "IX_Sessoes_CinemaId",
+                table: "Sessoes",
                 column: "CinemaId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Sessaos_FilmeId",
-                table: "Sessaos",
+                name: "IX_Sessoes_FilmeId",
+                table: "Sessoes",
                 column: "FilmeId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Sessaos");
+                name: "Sessoes");
 
             migrationBuilder.AlterColumn<string>(
                 name: "Genero",
