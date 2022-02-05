@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/muriloribeiro/Documents/Projetos/FilmeAPI/FilmesApi/FilmesApi.csproj": {}
+    "/Users/muriloribeiro/Documents/Projetos/FilmeAPI/UsuariosApi/UsuariosApi.csproj": {}
   },
   "projects": {
-    "/Users/muriloribeiro/Documents/Projetos/FilmeAPI/FilmesApi/FilmesApi.csproj": {
+    "/Users/muriloribeiro/Documents/Projetos/FilmeAPI/UsuariosApi/UsuariosApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/muriloribeiro/Documents/Projetos/FilmeAPI/FilmesApi/FilmesApi.csproj",
-        "projectName": "FilmesApi",
-        "projectPath": "/Users/muriloribeiro/Documents/Projetos/FilmeAPI/FilmesApi/FilmesApi.csproj",
+        "projectUniqueName": "/Users/muriloribeiro/Documents/Projetos/FilmeAPI/UsuariosApi/UsuariosApi.csproj",
+        "projectName": "UsuariosApi",
+        "projectPath": "/Users/muriloribeiro/Documents/Projetos/FilmeAPI/UsuariosApi/UsuariosApi.csproj",
         "packagesPath": "/Users/muriloribeiro/.nuget/packages/",
-        "outputPath": "/Users/muriloribeiro/Documents/Projetos/FilmeAPI/FilmesApi/obj/",
+        "outputPath": "/Users/muriloribeiro/Documents/Projetos/FilmeAPI/UsuariosApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/muriloribeiro/.config/NuGet/NuGet.Config"
+          "/Users/muriloribeiro/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -46,13 +46,13 @@
               "target": "Package",
               "version": "[2.5.0, )"
             },
-            "Microsoft.AspNetCore.Mvc.Formatters.Json": {
+            "Microsoft.AspNetCore.Identity": {
               "target": "Package",
               "version": "[2.2.0, )"
             },
-            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.7, )"
+              "version": "[5.0.5, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -68,17 +68,13 @@
               "target": "Package",
               "version": "[5.0.5, )"
             },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
             "MySql.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.3, )"
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.1, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[5.6.3, )"
             }
           },
           "imports": [
