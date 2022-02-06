@@ -32,11 +32,20 @@ namespace UsuariosApi
             //Usando a string de conexão
             services.AddDbContext<UserDbContext>(options =>
                 options.UseMySQL(Configuration.GetConnectionString("UsuarioConnection")));
-            services.AddIdentity<IdentityUser<int>, IdentityRole<int>>()
-                .AddEntityFrameworkStores<UserDbContext>();
 
-            //Fazendo a injeção dos Services dentro do controlador ;
+            //Injetando o Identity
+            services.AddIdentity<IdentityUser<int>, IdentityRole<int>>(
+                //Pedindo a confirmação do e-mail
+                opts => opts.SignIn.RequireConfirmedEmail = true
+                )
+                .AddEntityFrameworkStores<UserDbContext>()
+                .AddDefaultTokenProviders();
+
+            //Fazendo a injeção dos Services;
             services.AddScoped<CadastroServices, CadastroServices>();
+            services.AddScoped<LoginService, LoginService>();
+            services.AddScoped<TokenService, TokenService>();
+            services.AddScoped<LogoutService, LogoutService>();
 
             services.AddControllers();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());

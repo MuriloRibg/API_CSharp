@@ -26,7 +26,7 @@ namespace FilmesAPI
             //Usando a string de conexão;
             services.AddDbContext<AppDbContext>(opts => opts.UseLazyLoadingProxies().UseMySQL(Configuration.GetConnectionString("CinemaConnection")));
 
-            //Fazendo a injeção dos Services dentro do controlador;
+            //Fazendo a injeção dos Services;
             services.AddScoped<FilmeServices, FilmeServices>();
             services.AddScoped<CinemaServices, CinemaServices>();
             services.AddScoped<EnderecoService, EnderecoService>();

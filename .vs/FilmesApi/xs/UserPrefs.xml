@@ -1,12 +1,22 @@
 ﻿<Properties StartupConfiguration="{C5BAD384-92D3-4EEF-A1CE-3603CBF45DDF}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="UsuariosApi/Models/Mensagem.cs">
+    <Files>
+      <File FileName="UsuariosApi/Controllers/CadastroController.cs" Line="14" Column="23" />
+      <File FileName="UsuariosApi/Services/CadastroServices.cs" Line="44" Column="67" />
+      <File FileName="UsuariosApi/Services/EmailService.cs" Line="10" Column="18" />
+      <File FileName="UsuariosApi/Models/Mensagem.cs" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FilmesApi" expanded="True">
-            <Node name="FilmesApi" expanded="True">
-              <Node name="Migrations" expanded="True">
-                <Node name="20220203154638_RelacionamentoCinemaFilme.cs" expanded="True" selected="True" />
+            <Node name="UsuariosApi" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True">
+                <Node name="Requests" expanded="True" />
+              </Node>
+              <Node name="Models" expanded="True">
+                <Node name="Mensagem.cs" selected="True" />
               </Node>
               <Node name="Services" expanded="True" />
             </Node>
