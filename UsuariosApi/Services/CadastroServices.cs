@@ -7,6 +7,7 @@ using FluentResults;
 using System.Threading.Tasks;
 using UsuariosApi.Data.Requests;
 using System.Linq;
+using System.Web;
 
 namespace UsuariosApi.Services
 {
@@ -39,9 +40,13 @@ namespace UsuariosApi.Services
             if (resultadoIdentity.Result.Succeeded)
             {
                 //Código de ativação do e-mail
-                var code = _userManager.GenerateEmailConfirmationTokenAsync(usuarioIdentity).Result;
-                _emailService.EnviarEmail(new[] { usuarioIdentity.Email},
-                    "Link de ativação!", usuarioIdentity.Id, code);
+                var code = _userManager
+                   .GenerateEmailConfirmationTokenAsync(usuarioIdentity).Result;
+                var encodedCode = HttpUtility.UrlEncode(code);
+
+                _emailService.EnviarEmail(new[] { usuarioIdentity.Email },
+                     "Link de Ativação", usuarioIdentity.Id, encodedCode);
+
                 return Result.Ok().WithSuccess(code);
             }
             return Result.Fail("Falha ao cadastrar usuário!");

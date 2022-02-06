@@ -1,10 +1,11 @@
-﻿<Properties StartupConfiguration="{C5BAD384-92D3-4EEF-A1CE-3603CBF45DDF}|Default">
+﻿<Properties StartupConfiguration="{09091457-FCAB-4136-A40A-E046A52E9D85}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="UsuariosApi/Models/Mensagem.cs">
     <Files>
-      <File FileName="UsuariosApi/Controllers/CadastroController.cs" Line="14" Column="23" />
-      <File FileName="UsuariosApi/Services/CadastroServices.cs" Line="44" Column="67" />
-      <File FileName="UsuariosApi/Services/EmailService.cs" Line="10" Column="18" />
-      <File FileName="UsuariosApi/Models/Mensagem.cs" Line="1" Column="1" />
+      <File FileName="UsuariosApi/Services/EmailService.cs" Line="20" Column="42" IsPinned="True" />
+      <File FileName="UsuariosApi/Controllers/CadastroController.cs" />
+      <File FileName="UsuariosApi/Services/CadastroServices.cs" />
+      <File FileName="UsuariosApi/appsettings.json" />
+      <File FileName="UsuariosApi/Models/Mensagem.cs" Line="19" Column="90" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,9 +13,6 @@
           <Node name="FilmesApi" expanded="True">
             <Node name="UsuariosApi" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Data" expanded="True">
-                <Node name="Requests" expanded="True" />
-              </Node>
               <Node name="Models" expanded="True">
                 <Node name="Mensagem.cs" selected="True" />
               </Node>
@@ -25,6 +23,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.UsuariosApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.FilmesApi PreferredExecutionTarget="/Applications/Google Chrome.app" />

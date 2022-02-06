@@ -14,7 +14,7 @@
         "outputPath": "/Users/muriloribeiro/Documents/Projetos/FilmeAPI/FilmesApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/muriloribeiro/.nuget/NuGet/NuGet.Config"
+          "/Users/muriloribeiro/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"

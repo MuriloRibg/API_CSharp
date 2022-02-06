@@ -54,3 +54,5 @@
 /Users/muriloribeiro/Documents/Projetos/FilmeAPI/UsuariosApi/bin/Debug/net5.0/Microsoft.IdentityModel.Logging.dll
 /Users/muriloribeiro/Documents/Projetos/FilmeAPI/UsuariosApi/bin/Debug/net5.0/Microsoft.IdentityModel.Tokens.dll
 /Users/muriloribeiro/Documents/Projetos/FilmeAPI/UsuariosApi/bin/Debug/net5.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/muriloribeiro/Documents/Projetos/FilmeAPI/UsuariosApi/bin/Debug/net5.0/MailKit.dll
+/Users/muriloribeiro/Documents/Projetos/FilmeAPI/UsuariosApi/bin/Debug/net5.0/MimeKit.dll

@@ -42,9 +42,9 @@ namespace UsuariosApi
                 .AddDefaultTokenProviders();
 
             //Fazendo a injeção dos Services;
+            services.AddScoped<TokenService, TokenService>();
             services.AddScoped<CadastroServices, CadastroServices>();
             services.AddScoped<LoginService, LoginService>();
-            services.AddScoped<TokenService, TokenService>();
             services.AddScoped<LogoutService, LogoutService>();
 
             services.AddControllers();
