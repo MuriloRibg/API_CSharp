@@ -29,6 +29,8 @@ namespace UsuariosApi
         // Este método é chamado pelo tempo de execução. Use este método para adicionar serviços ao contêiner.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddHttpClient();
+
             //Usando a string de conexão
             services.AddDbContext<UserDbContext>(options =>
                 options.UseMySQL(Configuration.GetConnectionString("UsuarioConnection")));
@@ -36,12 +38,13 @@ namespace UsuariosApi
             //Injetando o Identity
             services.AddIdentity<IdentityUser<int>, IdentityRole<int>>(
                 //Pedindo a confirmação do e-mail
-                opts => opts.SignIn.RequireConfirmedEmail = true
+                //opts => opts.SignIn.RequireConfirmedEmail = true
                 )
                 .AddEntityFrameworkStores<UserDbContext>()
                 .AddDefaultTokenProviders();
 
             //Fazendo a injeção dos Services;
+            services.AddScoped<EmailService, EmailService>();
             services.AddScoped<TokenService, TokenService>();
             services.AddScoped<CadastroServices, CadastroServices>();
             services.AddScoped<LoginService, LoginService>();

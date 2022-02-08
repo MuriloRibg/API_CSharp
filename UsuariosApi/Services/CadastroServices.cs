@@ -36,7 +36,7 @@ namespace UsuariosApi.Services
             IdentityUser<int> usuarioIdentity = _mapper.Map<IdentityUser<int>>(usuario);
 
             //Retornar uma tarefa, pois está executando uma
-            Task<IdentityResult> resultadoIdentity = _userManager.CreateAsync(usuarioIdentity, createDto.Password);
+            var resultadoIdentity = _userManager.CreateAsync(usuarioIdentity, createDto.Password);
             if (resultadoIdentity.Result.Succeeded)
             {
                 //Código de ativação do e-mail

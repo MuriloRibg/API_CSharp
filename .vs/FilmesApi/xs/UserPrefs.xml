@@ -1,22 +1,25 @@
 ﻿<Properties StartupConfiguration="{09091457-FCAB-4136-A40A-E046A52E9D85}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="UsuariosApi/Models/Mensagem.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UsuariosApi/Data/Dtos/CreateUsuarioDto.cs">
     <Files>
-      <File FileName="UsuariosApi/Services/EmailService.cs" Line="20" Column="42" IsPinned="True" />
-      <File FileName="UsuariosApi/Controllers/CadastroController.cs" />
-      <File FileName="UsuariosApi/Services/CadastroServices.cs" />
-      <File FileName="UsuariosApi/appsettings.json" />
+      <File FileName="UsuariosApi/Controllers/CadastroController.cs" Line="1" Column="1" />
+      <File FileName="UsuariosApi/Services/EmailService.cs" Line="55" Column="57" />
+      <File FileName="UsuariosApi/Services/CadastroServices.cs" Line="19" Column="44" />
+      <File FileName="UsuariosApi/Profiles/UsuarioProfiles.cs" Line="13" Column="33" />
       <File FileName="UsuariosApi/Models/Mensagem.cs" Line="19" Column="90" />
+      <File FileName="UsuariosApi/Startup.cs" Line="32" Column="1" />
+      <File FileName="UsuariosApi/Models/Usuario.cs" Line="1" Column="1" />
+      <File FileName="UsuariosApi/Data/Dtos/CreateUsuarioDto.cs" Line="9" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FilmesApi" expanded="True">
             <Node name="UsuariosApi" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="Mensagem.cs" selected="True" />
+              <Node name="Data" expanded="True">
+                <Node name="Dtos" expanded="True">
+                  <Node name="CreateUsuarioDto.cs" selected="True" />
+                </Node>
               </Node>
-              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>

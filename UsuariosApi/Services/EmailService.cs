@@ -48,7 +48,7 @@ namespace UsuariosApi.Services
             }
         }
 
-        [Obsolete]
+
         private MimeMessage CriarCorpoEmail(Mensagem mensagem)
         {
             var mensagemDeEmail = new MimeMessage();
