@@ -52,7 +52,7 @@ namespace UsuariosApi.Services
         private MimeMessage CriarCorpoEmail(Mensagem mensagem)
         {
             var mensagemDeEmail = new MimeMessage();
-            mensagemDeEmail.From.Add(new MailboxAddress(
+            mensagemDeEmail.From.Add(new MailboxAddress("E-mail de confirmação." ,
                 _configuration.GetValue<string>("EmailSettings:From")));
             mensagemDeEmail.To.AddRange(mensagem.Destinatario);
             mensagemDeEmail.Subject = mensagem.Assunto;

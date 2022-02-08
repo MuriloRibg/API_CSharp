@@ -54,15 +54,18 @@ namespace UsuariosApi.Services
         }
 
         //POST /ativa
-        public Result AtivaContaUsuario(AtivaContaRequest ativaContaRequest)
+        public Result AtivaContaUsuario(AtivaContaRequest request)
         {
             var identityUser = _userManager
                 .Users
-                .FirstOrDefault(usuario => usuario.Id == ativaContaRequest.UsuarioId);
+                .FirstOrDefault(u => u.Id == request.UsuarioId);
             var identityResult = _userManager
-                .ConfirmEmailAsync(identityUser, ativaContaRequest.CodigoDeAtivacao).Result;
-            if (identityResult.Succeeded) return Result.Ok();
-            return Result.Fail("Falha ao ativar conta de usuário!");
+                .ConfirmEmailAsync(identityUser, request.CodigoDeAtivacao).Result;
+            if (identityResult.Succeeded)
+            {
+                return Result.Ok();
+            }
+            return Result.Fail("Falha ao ativar conta de usuário");
         }
     }
 }

@@ -1,25 +1,25 @@
 ﻿<Properties StartupConfiguration="{09091457-FCAB-4136-A40A-E046A52E9D85}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="UsuariosApi/Data/Dtos/CreateUsuarioDto.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UsuariosApi/Models/Mensagem.cs">
     <Files>
-      <File FileName="UsuariosApi/Controllers/CadastroController.cs" Line="1" Column="1" />
-      <File FileName="UsuariosApi/Services/EmailService.cs" Line="55" Column="57" />
-      <File FileName="UsuariosApi/Services/CadastroServices.cs" Line="19" Column="44" />
-      <File FileName="UsuariosApi/Profiles/UsuarioProfiles.cs" Line="13" Column="33" />
-      <File FileName="UsuariosApi/Models/Mensagem.cs" Line="19" Column="90" />
-      <File FileName="UsuariosApi/Startup.cs" Line="32" Column="1" />
-      <File FileName="UsuariosApi/Models/Usuario.cs" Line="1" Column="1" />
-      <File FileName="UsuariosApi/Data/Dtos/CreateUsuarioDto.cs" Line="9" Column="31" />
+      <File FileName="UsuariosApi/Controllers/CadastroController.cs" Line="26" Column="41" />
+      <File FileName="UsuariosApi/Services/CadastroServices.cs" Line="68" Column="68" />
+      <File FileName="UsuariosApi/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="UsuariosApi/appsettings.json" Line="12" Column="4" />
+      <File FileName="UsuariosApi/Program.cs" Line="26" Column="53" />
+      <File FileName="UsuariosApi/Services/EmailService.cs" Line="55" Column="80" />
+      <File FileName="UsuariosApi/Models/Mensagem.cs" Line="19" Column="92" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FilmesApi" expanded="True">
             <Node name="UsuariosApi" expanded="True">
-              <Node name="Data" expanded="True">
-                <Node name="Dtos" expanded="True">
-                  <Node name="CreateUsuarioDto.cs" selected="True" />
-                </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Mensagem.cs" selected="True" />
               </Node>
+              <Node name="Services" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
