@@ -1,25 +1,24 @@
 ﻿<Properties StartupConfiguration="{09091457-FCAB-4136-A40A-E046A52E9D85}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="UsuariosApi/Models/Mensagem.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UsuariosApi/Data/Requests/EfetuaResetRequest.cs">
     <Files>
-      <File FileName="UsuariosApi/Controllers/CadastroController.cs" Line="26" Column="41" />
-      <File FileName="UsuariosApi/Services/CadastroServices.cs" Line="68" Column="68" />
-      <File FileName="UsuariosApi/appsettings.Development.json" Line="1" Column="1" />
-      <File FileName="UsuariosApi/appsettings.json" Line="12" Column="4" />
-      <File FileName="UsuariosApi/Program.cs" Line="26" Column="53" />
-      <File FileName="UsuariosApi/Services/EmailService.cs" Line="55" Column="80" />
-      <File FileName="UsuariosApi/Models/Mensagem.cs" Line="19" Column="92" />
+      <File FileName="UsuariosApi/Controllers/LoginController.cs" Line="32" Column="69" />
+      <File FileName="UsuariosApi/Services/LoginService.cs" Line="60" Column="13" />
+      <File FileName="UsuariosApi/Data/Requests/SolicitaResetRequest.cs" Line="9" Column="28" />
+      <File FileName="UsuariosApi/Data/Requests/EfetuaResetRequest.cs" Line="6" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FilmesApi" expanded="True">
+            <Node name="FilmesApi" expanded="True" />
             <Node name="UsuariosApi" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="Mensagem.cs" selected="True" />
+              <Node name="Data" expanded="True">
+                <Node name="Requests" expanded="True">
+                  <Node name="EfetuaResetRequest.cs" selected="True" />
+                </Node>
               </Node>
               <Node name="Services" expanded="True" />
-              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -29,7 +28,6 @@
   <MonoDevelop.Ide.ItemProperties.UsuariosApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.FilmesApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
