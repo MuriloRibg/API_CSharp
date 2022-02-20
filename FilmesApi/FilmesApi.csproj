@@ -16,6 +16,7 @@
     <None Remove="FluentResults" />
     <None Remove="Microsoft.AspNetCore.Authentication.JwtBearer" />
     <None Remove="Microsoft.AspNetCore.Authorization" />
+    <None Remove="Data\Dtos\Fotos\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -41,6 +42,7 @@
     <Folder Include="Data\Dtos\Gerente\" />
     <Folder Include="Data\Dtos\Sessao\" />
     <Folder Include="Services\" />
+    <Folder Include="Data\Dtos\Fotos\" />
   </ItemGroup>
 
   <ItemGroup>

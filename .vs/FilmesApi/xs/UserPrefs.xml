@@ -1,23 +1,25 @@
-﻿<Properties StartupConfiguration="{09091457-FCAB-4136-A40A-E046A52E9D85}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="UsuariosApi/Services/TokenService.cs">
+﻿<Properties StartupConfiguration="{C5BAD384-92D3-4EEF-A1CE-3603CBF45DDF}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FilmesApi/Services/FotoService.cs">
     <Files>
-      <File FileName="UsuariosApi/Program.cs" Line="16" Column="30" />
-      <File FileName="FilmesApi/Program.cs" Line="1" Column="1" />
-      <File FileName="UsuariosApi/Services/CadastroServices.cs" Line="1" Column="1" />
-      <File FileName="UsuariosApi/Services/LoginService.cs" Line="1" Column="1" />
-      <File FileName="UsuariosApi/Services/TokenService.cs" Line="18" Column="23" />
+      <File FileName="FilmesApi/Data/Dtos/Fotos/CreateFotoDto.cs" Line="24" Column="27" />
+      <File FileName="FilmesApi/Services/FotoService.cs" Line="44" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FilmesApi" expanded="True">
-            <Node name="FilmesApi" expanded="True" />
-            <Node name="UsuariosApi" expanded="True">
-              <Node name="Migrations" expanded="True" />
+            <Node name="FilmesApi" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True">
+                <Node name="Dtos" expanded="True">
+                  <Node name="Fotos" expanded="True" />
+                </Node>
+              </Node>
               <Node name="Services" expanded="True">
-                <Node name="TokenService.cs" selected="True" />
+                <Node name="FotoService.cs" selected="True" />
               </Node>
             </Node>
+            <Node name="UsuariosApi" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -26,6 +28,7 @@
   <MonoDevelop.Ide.ItemProperties.UsuariosApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.FilmesApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

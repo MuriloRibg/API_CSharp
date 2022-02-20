@@ -15,6 +15,7 @@ namespace UsuariosApi.Services
     {
         public Token CreateToken(IdentityUser<int> usuario, string role)
         {
+            if (role == null) return null;
             //Direitos
             Claim[] direitosUsuario = new Claim[]
             {

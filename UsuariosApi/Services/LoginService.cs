@@ -1,7 +1,9 @@
-﻿using System;
-using System.Linq;
-using FluentResults;
+﻿using FluentResults;
 using Microsoft.AspNetCore.Identity;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using UsuariosApi.Data.Requests;
 using UsuariosApi.Models;
 
@@ -21,18 +23,19 @@ namespace UsuariosApi.Services
         //POST
         public Result LogaUsuario(LoginRequest request)
         {
-            var resultadoIdentity = _signInManager.
-                PasswordSignInAsync(request.Username, request.Password, false, false);
+            var resultadoIdentity = _signInManager
+                .PasswordSignInAsync(request.Username, request.Password, false, false);
             if (resultadoIdentity.Result.Succeeded)
             {
                 //Recuperando o usuario
-                IdentityUser<int> identityUser = _signInManager
+                var identityUser = _signInManager
                     .UserManager
                     .Users
                     .FirstOrDefault(usuario =>
                     usuario.NormalizedUserName == request.Username.ToUpper());
-
-                Token token = _tokenService.CreateToken(identityUser, _signInManager.UserManager.GetRolesAsync(identityUser).Result.FirstOrDefault());
+                Token token = _tokenService
+                    .CreateToken(identityUser, _signInManager
+                                .UserManager.GetRolesAsync(identityUser).Result.FirstOrDefault());
 
                 //retornando o token para o controller
                 return Result.Ok().WithSuccess(token.Value);
