@@ -37,8 +37,8 @@ namespace UsuariosApi
 
             //Injetando o Identity
             services.AddIdentity<IdentityUser<int>, IdentityRole<int>>(
-                //Pedindo a confirmação do e-mail
-                //opts => opts.SignIn.RequireConfirmedEmail = true
+                //Pedindo a confirmação do e - mail
+                opts => opts.SignIn.RequireConfirmedEmail = true
                 )
                 .AddEntityFrameworkStores<UserDbContext>()
                 .AddDefaultTokenProviders();

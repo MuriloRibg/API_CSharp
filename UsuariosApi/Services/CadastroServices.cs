@@ -17,16 +17,18 @@ namespace UsuariosApi.Services
         private IMapper _mapper;
         private UserManager<IdentityUser<int>> _userManager; //int = pq é um identificador inteiro
         private EmailService _emailService;
+        private RoleManager<IdentityRole<int>> _roleManager;
 
         public CadastroServices(
             IMapper mapper,
             UserManager<IdentityUser<int>> userMenager,
-            EmailService emailService
-            )
+            EmailService emailService,
+            RoleManager<IdentityRole<int>> roleManager)
         {
             _userManager = userMenager;
             _mapper = mapper;
             _emailService = emailService;
+            _roleManager = roleManager;
         }
 
         //POST
@@ -36,7 +38,11 @@ namespace UsuariosApi.Services
             IdentityUser<int> usuarioIdentity = _mapper.Map<IdentityUser<int>>(usuario);
 
             //Retornar uma tarefa, pois está executando uma
-            var resultadoIdentity = _userManager.CreateAsync(usuarioIdentity, createDto.Password);
+            Task<IdentityResult> resultadoIdentity = _userManager.CreateAsync(usuarioIdentity, createDto.Password);
+
+            var createRoleResult = _roleManager
+                .CreateAsync(new IdentityRole<int>("admin")).Result;
+
             if (resultadoIdentity.Result.Succeeded)
             {
                 //Código de ativação do e-mail

@@ -1,23 +1,28 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.IdentityModel.Tokens;
+using System;
+using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Text;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.IdentityModel.Tokens;
+using System.Threading.Tasks;
 using UsuariosApi.Models;
 
 namespace UsuariosApi.Services
 {
     public class TokenService
     {
-        public Token CreateToken(IdentityUser<int> usuario)
+        public Token CreateToken(IdentityUser<int> usuario, string role)
         {
             //Direitos
             Claim[] direitosUsuario = new Claim[]
             {
-                 new Claim("username", usuario.UserName),
-                 new Claim("id", usuario.Id.ToString())
+                new Claim("userName", usuario.UserName),
+                new Claim("id", usuario.Id.ToString()),
+                new Claim(ClaimTypes.Role, role)
             };
+
 
             //Chave de segurança (criptografia), Encoding == codificação
             var chave = new SymmetricSecurityKey(
@@ -35,7 +40,6 @@ namespace UsuariosApi.Services
 
             //tranformando em uma string
             var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
-
             return new Token(tokenString);
         }
     }

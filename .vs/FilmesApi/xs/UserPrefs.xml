@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{09091457-FCAB-4136-A40A-E046A52E9D85}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="UsuariosApi/Data/Requests/EfetuaResetRequest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UsuariosApi/Services/TokenService.cs">
     <Files>
-      <File FileName="UsuariosApi/Controllers/LoginController.cs" Line="32" Column="69" />
-      <File FileName="UsuariosApi/Services/LoginService.cs" Line="60" Column="13" />
-      <File FileName="UsuariosApi/Data/Requests/SolicitaResetRequest.cs" Line="9" Column="28" />
-      <File FileName="UsuariosApi/Data/Requests/EfetuaResetRequest.cs" Line="6" Column="9" />
+      <File FileName="UsuariosApi/Program.cs" Line="16" Column="30" />
+      <File FileName="FilmesApi/Program.cs" Line="1" Column="1" />
+      <File FileName="UsuariosApi/Services/CadastroServices.cs" Line="1" Column="1" />
+      <File FileName="UsuariosApi/Services/LoginService.cs" Line="1" Column="1" />
+      <File FileName="UsuariosApi/Services/TokenService.cs" Line="18" Column="23" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,13 +13,10 @@
           <Node name="FilmesApi" expanded="True">
             <Node name="FilmesApi" expanded="True" />
             <Node name="UsuariosApi" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Data" expanded="True">
-                <Node name="Requests" expanded="True">
-                  <Node name="EfetuaResetRequest.cs" selected="True" />
-                </Node>
+              <Node name="Migrations" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="TokenService.cs" selected="True" />
               </Node>
-              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>

@@ -21,7 +21,7 @@ namespace UsuariosApi.Controllers
         public IActionResult LogaUsuario(LoginRequest request)
         {
             Result result = _loginService.LogaUsuario(request);
-            if (result.IsFailed) return Unauthorized(result.Errors);
+            if (result.IsFailed) return Unauthorized(result.Reasons);
             return Ok(result.Successes);
         }
 
@@ -30,7 +30,7 @@ namespace UsuariosApi.Controllers
         {
             Result result = _loginService.SolicitaResetSenhaUsuario(request);
             if (result.IsFailed) return Unauthorized(result.Errors);
-            return Ok(result.Successes);
+            return Ok(result);
         }
 
         [HttpPost("/efetua-reset")]
