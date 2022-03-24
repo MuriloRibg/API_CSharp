@@ -1,0 +1,15 @@
+<div class="d-flex p-4 justify-content-center">
+  <form action="" class="form-floating">
+    <input
+      type="search"
+      class="form-control"
+      placeholder="Leave a comment here"
+      id="floatingTextarea"
+      autofocus
+      #buscarInput
+      (keyup)="debounce.next(buscarInput.value)"
+    />
+    <!-- Criando um binding de eventos -->
+    <label for="floatingTextarea">Buscar</label>
+  </form>
+</div>

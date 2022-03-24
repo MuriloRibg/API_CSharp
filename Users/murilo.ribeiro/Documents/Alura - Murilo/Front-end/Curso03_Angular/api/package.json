@@ -1,0 +1,26 @@
+{
+  "name": "Curso_Fundamentos_Angular",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuriloRibg/Curso_Fundamentos_Angular.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MuriloRibg/Curso_Fundamentos_Angular/issues"
+  },
+  "homepage": "https://github.com/MuriloRibg/Curso_Fundamentos_Angular#readme",
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}

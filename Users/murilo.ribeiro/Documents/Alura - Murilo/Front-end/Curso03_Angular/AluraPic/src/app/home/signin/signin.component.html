@@ -1,0 +1,49 @@
+<div class="divSignin">
+  <div class="alert alert-light m-1" role="alert">
+    <h4 class="text-center">Login</h4>
+
+    <form [formGroup]="loginForm" class="form mt-4" (submit)="login()">
+      <div class="form-group p-2">
+        <input #userName
+          formControlName="userName"
+          type="text"
+          class="form-control"
+          placeholder="Nome de usuário"
+          autofocus
+        />
+        <app-vmessage
+          *ngIf="loginForm.get('userName')?.errors?.['required']"
+          text="O nome do usuário é obrigatório!"
+        ></app-vmessage>
+      </div>
+
+      <div class="form-group p-2">
+        <input
+          formControlName="password"
+          type="password"
+          class="form-control"
+          placeholder="Senha"
+        />
+        <app-vmessage
+          *ngIf="loginForm.get('password')?.errors?.['required']"
+          text="A senha é obrigatoria!"
+        ></app-vmessage>
+      </div>
+
+      <div class="d-grid gap-2 col-6 mx-auto p-2">
+        <button
+          [disabled]="loginForm.invalid"
+          type="submit"
+          class="btn btn-primary"
+        >
+          login
+        </button>
+      </div>
+    </form>
+    <div class="alert alert-info link" role="alert">
+      <p>
+        Não é um usuário? <a [routerLink]="['sigup']" class="alert-link"> Registre-se agora</a>
+      </p>
+    </div>
+  </div>
+</div>
