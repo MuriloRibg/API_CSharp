@@ -1,3 +1,5 @@
+import { LoginGuard } from './core/auth/login.guard';
+import { AuthGuard } from './core/auth/auth.guard';
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 
@@ -5,7 +7,6 @@ import { PhotosListComponent } from './photos/photos-list/photos-list.component'
 import { PhotosFormComponent } from './photos/photos-form/photos-form.component';
 import { NotFoundComponent } from './errors/not-found/not-found.component';
 import { PhotoListResolver } from './photos/photos-list/photo-list.resolver';
-
 
 const routes: Routes = [
   {
@@ -15,15 +16,23 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then(x => x.HomeModule)
+    loadChildren: () => import('./home/home.module').then((x) => x.HomeModule),
   },
   {
     path: 'user/:userName',
     component: PhotosListComponent,
     resolve: { photo: PhotoListResolver },
+    canActivate: [LoginGuard]
   },
-  { path: 'p/add', component: PhotosFormComponent },
-  { path: '**', component: NotFoundComponent },
+  {
+    path: 'p/add',
+    component: PhotosFormComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: '**',
+    component: NotFoundComponent
+  },
 ];
 
 @NgModule({
