@@ -1,7 +1,7 @@
 import { Router } from '@angular/router';
 import { PhotoService } from './../photo/photo.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { Component, EventEmitter, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-photos-form',
@@ -11,7 +11,6 @@ import { Component, EventEmitter, OnInit } from '@angular/core';
 export class PhotosFormComponent implements OnInit {
   formPhotos!: FormGroup;
   file!: any;
-  preview!: string;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -38,12 +37,7 @@ export class PhotosFormComponent implements OnInit {
       });
   }
 
-  handleFile(event: any){
+  convertFile(event: any) {
     this.file = event.target.files[0] ?? null;
-    const READER = new FileReader();
-    READER.onload = (event: any) => {
-      this.preview = event.target.result;
-    }
-    READER.readAsDataURL(this.file)
   }
 }
